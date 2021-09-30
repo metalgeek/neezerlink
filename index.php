@@ -74,12 +74,7 @@
 				<div class="container">
 					<h3>SEE THE WORLD AT EASE</h3>
 					<p>Flight with Neezerlink...</p>
-				
-					<section class="flight-search-container">
-        			<div class="container flight-search">
-          			<iframe id='travelstartIframe-32647fb7-728a-4052-8339-e691a7a9f48d' frameBorder='0' scrolling='no' style='margin: 0px; padding: 0px; border: 0px; height: 0px; background-color: #fafafa;'></iframe>
-        			</div>
-      				</section>
+					<a href="#flight" class="btn_1 rounded mt-3">Book a flight Now</a>
 				</div>
 			</div>
 		</div>
@@ -195,6 +190,21 @@
 		</div>
 		<!-- /container -->
 </section>
+
+
+<section class="flight-search-container mt-5" id="flight">
+
+			<div class="main_title_2">
+				<span><em></em></span>
+				<h2>Book A Flight</h2>
+				<p></p>
+			</div>
+
+        	<div class="container flight-search">
+          		<iframe id='travelstartIframe-32647fb7-728a-4052-8339-e691a7a9f48d' frameBorder='0' scrolling='no' style='margin: 0px; padding: 0px; border: 0px; height: 0px; background-color: #fafafa;'></iframe>
+        	</div>
+</section>
+
 
 <section id="tours">
 		<div class="container container-custom margin_80_0">
@@ -580,7 +590,7 @@
 							<h3>Enjoy a GREAT travel with us</h3>
 							<p>No matter where you’re going from, we take you there.</p>
 							<p>Let us transport you with our highly affordable and reliable holiday packages</p>
-							<a href="#0" class="btn_1 rounded">Book a flight</a>
+							<a href="#flight" class="btn_1 rounded">Book a flight</a>
 						</div>
 					</div>
 				</div>
@@ -746,6 +756,134 @@
 	
 	<!-- INPUT QUANTITY  -->
 	<script src="js/input_qty.js"></script>
+
+	<!-- travel start -->
+	<script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/vendor/jquery.browser-0.0.8.min.js'>
+</script><script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/jquery.ba-postmessage.min.js'></script>
+
+<script>
+
+	// these variables can be configured 
+	var travelstartIframeId = 'travelstartIframe-32647fb7-728a-4052-8339-e691a7a9f48d'; 
+	var iframeUrl = 'https://www.travelstart.com.ng'; 
+	var logMessages = false; 
+	var showBanners = false; 
+	var affId = '215170'; 
+	var affCampaign = ''; 
+	var affCurrency = 'Default'; // ZAR / USD / NAD / ... 
+	var height = '0px'; 
+	var width = '100%'; 
+	var language = ''; // ar / en / leave empty for user preference
+ 
+	// do not change these 
+	var iframe = jQuery('#' + travelstartIframeId); 
+	var iframeVersion = '11'; 
+	var autoSearch = false; 
+	var urlParams = {}; 
+	var alreadyExist = []; 
+	var affiliateIdExist = false;  
+	var iframeParams = []; 
+	var cpySource = ''; 
+	var match,
+		pl = /\+/g,  
+		search = /([^&=]+)=?([^&]*)/g,
+		decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+		query  = window.location.search.substring(1);
+	while (match = search.exec(query)){ 
+		urlParams[decode(match[1])] = decode(match[2]); 
+	}				 
+	for (var key in urlParams){ 
+		if (urlParams.hasOwnProperty(key)){ 
+			if (key == 'search' && urlParams[key] == 'true'){ 
+				autoSearch = true; 
+			} 
+			if(	key == 'affId' || key == 'affid' || key == 'aff_id'){ 
+				affiliateIdExist = true ; 
+			} 
+			iframeParams.push(key + '=' + urlParams[key]); 
+			alreadyExist.push(key); 
+		}	 
+	}		 
+	if(!('show_banners' in alreadyExist)){ 
+		iframeParams.push('show_banners=' + showBanners); 
+	}		 
+	if(!('log' in alreadyExist)){ 
+		iframeParams.push('log='  + logMessages); 
+	}		 
+	if(! affiliateIdExist){  
+		iframeParams.push('affId='  + affId); 
+	}		 
+	if(! affiliateIdExist){ 
+		iframeParams.push('language='  + language); 
+	}		 
+	if(!('affCampaign' in alreadyExist)){ 
+		iframeParams.push('affCampaign='  + affCampaign); 
+	}		 
+	if(cpySource !== '' && !('cpySource' in alreadyExist)){ 
+		iframeParams.push('cpy_source='  + cpySource); 
+	}		 
+	if(!('utm_source' in alreadyExist)){ 
+		iframeParams.push('utm_source=affiliate'); 
+	}		 
+	if(!('utm_medium' in alreadyExist)){ 
+		iframeParams.push('utm_medium='  + affId); 
+	}		 
+	if(!('isiframe' in alreadyExist)){ 
+		iframeParams.push('isiframe=true'); 
+	}		 
+	if(!('landing_page' in alreadyExist)){ 
+		iframeParams.push('landing_page=false'); 
+	}		 
+	if (affCurrency.length == 3){ 
+		iframeParams.push('currency=' + affCurrency); 
+	} 
+	if(!('iframeVersion' in alreadyExist)){ 
+  		iframeParams.push('iframeVersion='  + iframeVersion);
+	}		 
+	if(!('host' in alreadyExist)){ 
+		iframeParams.push('host=' + window.location.href.split('?')[0]); 
+	}		 
+	var newIframeUrl = iframeUrl + (autoSearch ? '/search-on-index?search=true' : '/search-on-index?search=false') + '&' + iframeParams.join('&'); 
+	iframe.attr('src', newIframeUrl); 
+	function setIframeSize(newWidth, newHeight){ 
+		iframe.css('width', newWidth); 
+		iframe.width(newWidth); 
+		iframe.css('height', newHeight); 
+		iframe.height(newHeight); 
+	} 
+	setIframeSize(width, height); 
+	jQuery.receiveMessage(function(e, host){ 
+   try { 
+         if (typeof e.data !== 'undefined') { 
+            var dataElements = e.data.split('&'); 
+            if (dataElements) { 
+                if (dataElements.length === 1) { 
+                    //Resize 
+                     setIframeSize(width, e.data + 'px'); 
+                 } else { 
+                     // Set iframe Size 
+                     var height = dataElements[1].split('='); 
+                     setIframeSize(width, height[1]+'px'); 
+                     // Scroll to position 
+                     if (dataElements.length > 2) { 
+                         var scrollTo = dataElements[2].split('='); 
+                         if (scrollTo[1] !== 'none') { 
+                             var iframeTop = iframe.position().top; 
+                             if (scrollTo[1] == 'to-top') { 
+                                 window.scrollTo(0, iframeTop); 
+                             } else { 
+                                 window.scrollTo(0, iframeTop+parseInt(scrollTo[1])); 
+                             } 
+                         } 
+                     } 
+                 } 
+             } 
+         } 
+     } catch (err) { 
+         window.console && console.log(err); 
+     } 
+ }, iframeUrl); 
+</script>   
 	
 </body>
 </html>

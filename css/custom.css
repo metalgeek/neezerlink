@@ -46,3 +46,16 @@
     display: block;
     color: #3aafe3;
   }
+
+  .flight-search-container {
+    margin-top: -100px;
+    /* height: 400px; */
+  }
+  .flight-search {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: none;
+  }
+
