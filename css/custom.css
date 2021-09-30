@@ -1,0 +1,48 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+
+
+/* //services// */
+.toggle-text {
+    display: none;
+  }
+  
+  
+  #services button{
+      border: 0px;
+      background: none;
+      color: #3aafe3;
+  }
+
+  .table .icon-ok-5{
+      color:#3aafe3
+  }
+  .table .icon-cancel-5{
+    color: #ff0011;
+}
+
+.showmore {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+  }
+  
+  .showmore .more, .showmore.show .dots {
+    display: none
+  }
+  
+  .showmore.show .more {
+    display: inline
+  }
+  
+  .showmore button {
+    cursor: pointer;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .accordion_2 .card-header h5 a {
+    border: 0;
+    display: block;
+    color: #3aafe3;
+  }
