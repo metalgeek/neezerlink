@@ -69,7 +69,7 @@
 	
 	<main>
 		<!-- Background YouTube Parallax -->
-		<div class="hero_single jarallax" data-jarallax-video="https://youtu.be/mru3Q5m4lkY">
+		<div class="hero_single jarallax" data-jarallax-video="https://youtu.be/PEmKG_ZBNlc">
 		   <div class="wrapper" style="background-color: rgba(0, 0, 0, 0.5);">
 				<div class="container">
 					<h3>SEE THE WORLD AT EASE</h3>
