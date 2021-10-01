@@ -1,4 +1,4 @@
-/* <![CDATA[ */
+7/* <![CDATA[ */
 /// Jquery validate newsletter
 jQuery(document).ready(function(){
 
@@ -81,9 +81,12 @@ $('#contact_detail').submit(function () {
 			.attr('disabled', 'disabled');
 
 		$.post(action, {
-				name_detail: $('#name_detail').val(),
-				email_detail: $('#email_detail').val(),
-				message_detail: $('#message_detail').val(),
+				name: $('#name').val(),
+				email: $('#email').val(),
+				mobile: $('#mobile').val(),
+				package: $('#package').val(),
+				duration: $('#duration').val(),
+				comments: $('#comments').val(),
 				verify_contact_detail: $('#verify_contact_detail').val()
 			},
 			function (data) {

@@ -9,22 +9,25 @@ function isEmail($email_detail ) {
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
-$name_detail     = $_POST['name_detail'];
-$email_detail    = $_POST['email_detail'];
-$message_detail    = $_POST['message_detail'];
+$name     = $_POST['name'];
+$email   = $_POST['email'];
+$mobile    = $_POST['mobile'];
+$package  = $_POST['package'];
+$duration  = $_POST['duration'];
+$comments  = $_POST['comments'];
 $verify_contact_detail  = $_POST['verify_contact_detail'];
 
-if(trim($name_detail) == '') {
+if(trim($name) == '') {
 	echo '<div class="error_message">You must enter your Name.</div>';
 	exit();
-} else if(trim($email_detail) == '') {
+} else if(trim($email) == '') {
 	echo '<div class="error_message">Please enter a valid email address.</div>';
 	exit();
-} else if(!isEmail($email_detail)) {
+} else if(!isEmail($email)) {
 	echo '<div class="error_message">You have enter an invalid e-mail address, try again.</div>';
 	exit();
-} else if(trim($message_detail) == '') {
-	echo '<div class="error_message">Please enter your message.</div>';
+} else if(trim($mobile) == '') {
+	echo '<div class="error_message">Please enter your phone number.</div>';
 	exit();
 } else if(!isset($verify_contact_detail) || trim($verify_contact_detail) == '') {
 	echo '<div class="error_message"> Please enter the verification number.</div>';
@@ -40,26 +43,26 @@ if(get_magic_quotes_gpc()) {
 
 
 //$address = "HERE your email address";
-$address = "info@domain.com";
+$address = "damilareoladipo15@gmail.com";
 
 
 // Below the subject of the email
-$e_subject = 'You\'ve been contacted by ' . $name_detail . '.';
+$e_subject = 'You\'ve been contacted by ' . $name . '.';
 
 // You can change this if you feel that you need to.
-$e_body = "You have been contacted by $name_detail with additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$message_detail\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name_detail via email: $email_detail";
+$e_body = "You have been contacted by $name with additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_content = "\"$package\"" . PHP_EOL . PHP_EOL;
+$e_reply = "You can contact $name via email: $email";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
-$headers = "From: $email_detail" . PHP_EOL;
-$headers .= "Reply-To: $email_detail" . PHP_EOL;
+$headers = "From: $email" . PHP_EOL;
+$headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
-$user = "$email_detail";
+$user = "$email";
 $usersubject = "Thank You";
 $userheaders = "From: info@domain.com\n";
 $usermessage = "Thank you for contact us. We will reply shortly!";
@@ -70,7 +73,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	// Success message
 	echo "<div id='success_page' style='padding:25px 0'>";
 	echo "<strong >Email Sent.</strong><br>";
-	echo "Thank you <strong>$name_detail</strong>,<br> your message has been submitted. We will contact you shortly.";
+	echo "Thank you <strong>$name</strong>,<br> your message has been submitted. We will contact you shortly.";
 	echo "</div>";
 
 } else {

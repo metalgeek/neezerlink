@@ -291,8 +291,8 @@
 				</div>
 			</div>
 			<!-- /carousel -->
-			<!-- <p class="btn_home_align"><a href="tours-grid-isotope.html" class="btn_1 rounded">View all Tours</a></p>
-			<hr class="large"> -->
+			<p class="btn_home_align"><a href="#sign-in-dialog" id="sign-in" class="btn_1 rounded">Make an Enquiry</a></p>
+			<hr class="large">
 		</div>
 		<!-- /container -->
 </section>
@@ -668,47 +668,49 @@
 	<!-- Sign In Popup -->
 	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
 		<div class="small-dialog-header">
-			<h3>Sign In</h3>
+			<h3>Tour Enquiry</h3>
 		</div>
-		<form>
+		<div id="message-contact-detail">
+		<form method="post" action="assets/contact_detail.php" >
 			<div class="sign-in-wrapper">
-				<a href="#0" class="social_bt facebook">Login with Facebook</a>
-				<a href="#0" class="social_bt google">Login with Google</a>
-				<div class="divider"><span>Or</span></div>
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" class="form-control" name="name" id="name">
+					<i class="icon_user"></i>
+				</div>
+			
 				<div class="form-group">
 					<label>Email</label>
 					<input type="email" class="form-control" name="email" id="email">
 					<i class="icon_mail_alt"></i>
 				</div>
 				<div class="form-group">
-					<label>Password</label>
-					<input type="password" class="form-control" name="password" id="password" value="">
-					<i class="icon_lock_alt"></i>
+					<label>Phone Number</label>
+					<input type="text" class="form-control" name="mobile" id="mobile" value="phone number">
+					<i class="icon_phone"></i>
 				</div>
-				<div class="clearfix add_bottom_15">
-					<div class="checkboxes float-left">
-						<label class="container_check">Remember me
-						  <input type="checkbox">
-						  <span class="checkmark"></span>
-						</label>
-					</div>
-					<div class="float-right mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+				<div class="form-group">
+					<label>Desire Country or Package</label>
+					<input type="text" class="form-control" name="package" id="package">
+					<i class="icon_file"></i>
 				</div>
-				<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width"></div>
-				<div class="text-center">
-					Don’t have an account? <a href="register.html">Sign up</a>
+				<div class="form-group">
+					<label>Travel Duration</label>
+					<input type="text" class="form-control" name="duration" id="duration">
+					<i class="icon_clock"></i>
 				</div>
-				<div id="forgot_pw">
-					<div class="form-group">
-						<label>Please confirm login email below</label>
-						<input type="email" class="form-control" name="email_forgot" id="email_forgot">
-						<i class="icon_mail_alt"></i>
-					</div>
-					<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
-					<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+				<div class="form-group">
+					<label>comments</label>
+					<input type="text" class="form-control" name="comments" id="comments">
+					<i class="icon_chats"></i>
 				</div>
-			</div>
+				<div class="form-group">
+					<input placeholder="Are you human? 3 + 1 =" class="form-control" type="text" id="verify_contact_detail" name="verify_contact_detail">
+				</div>
+				
+				<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width" id="submit-contact-detail"></div>
 		</form>
+		</div>
 		<!--form -->
 	</div>
 	<!-- /Sign In Popup -->
