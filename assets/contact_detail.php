@@ -55,7 +55,8 @@ $e_content = "\"$package\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email: $email";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
-
+ini_set('SMTP','smtp.gmail.com');
+ini_set('smtp_port',465);
 $headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
