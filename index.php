@@ -204,10 +204,10 @@
 <div class="banner mb-0">
 				<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)">
 					<div>
-						<small>Adventure</small>
-						<h3>Your Perfect<br>Advenure Experience</h3>
-						<p>Activities and accommodations</p>
-						<a href="adventure.html" class="btn_1">Read more</a>
+						<small></small>
+						<h3>GET FEE <br>QUOTE FOR VISA <br>ASSISTANCE </h3>
+						<p></p>
+						<a href="#visa-popup" class="btn_1">Click Here</a>
 					</div>
 				</div>
 				<!-- /wrapper -->
@@ -472,7 +472,8 @@
 			<!-- /section -->
 
 			<div class="bg_color_1">
-				<div class="container margin_80_55">
+				<div class="container margin_80_55" style="
+    overflow: auto;">
 					<div>
 					<table class="table table-striped">
 							<thead>
@@ -834,7 +835,7 @@ $('#visa-quote').magnificPopup({
 	<!-- travel start -->
 	<script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/vendor/jquery.browser-0.0.8.min.js'>
 	</script><script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/jquery.ba-postmessage.min.js'></script>
-	<script type='text/javascript' src='http://localhost/neezerlink/js/travelstart_affiliate_code.js'></script>
+	<script type='text/javascript' src='../js/travelstart_affiliate_code.js'></script>
 
  
 	
