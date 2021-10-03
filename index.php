@@ -11,10 +11,7 @@
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon.png">
 
     <!-- GOOGLE WEB FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +51,7 @@
 		</a>
 		<nav id="menu" class="main-menu">
 			<ul>
-				<li><span><a href="#0">Home</a></span></li>
+				<li><span><a href="#">Home</a></span></li>
 				<li><span><a href="#about">About Us</a></span></li>
 				<li><span><a href="#services">Our Services</a></span></li>
 				<li><span><a href="#flight">Book Flight</a></span></li>
@@ -73,7 +70,7 @@
 		   <div class="wrapper" style="background-color: rgba(0, 0, 0, 0.5);">
 				<div class="container">
 					<h3>SEE THE WORLD AT EASE</h3>
-					<p>Flight with Neezerlink...</p>
+					<p>Fly with Neezerlink...</p>
 					<a href="#flight" class="btn_1 rounded mt-3">Book a flight Now</a>
 				</div>
 			</div>
@@ -85,7 +82,7 @@
 				<div class="main_title_2">
 					<span><em></em></span>
 					<h2>About Us</h2>
-					<p>Neezerlink Travel and Tour</p>
+					<p>Neezerlink Travels and Tours</p>
 				</div>
 				<div class="row justify-content-between">
 					<div class="col-lg-6 wow" data-wow-offset="150">
@@ -117,80 +114,78 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
+					<div class="box_feat" href="#0">
 						<i class="icon-ticket-1"></i>
 						<h3>Flight Bookings & Ticket Reservations</h3>
-						<p>We offer bookings for local and international flights across all airlines.<button> Book a Flight...</button></p>
-					</a>
+						<p>We offer bookings for local and international flights across all airlines.<a href="#flight"> Book a Flight...</a></p>
+			</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
+					<div class="box_feat" href="#0">
 						<i class="pe-7s-home"></i>
 						<h3>Hotel Bookings & Protocol Services</h3>
-						<p class="showmore">We take pride in our ability to secure competitive hotel rates at choice destinations<span class="dots">...</span><span class="more"> and plan luxury tours within and outside Nigeria.</span>
+						<p class="showmore">We take pride in our ability to secure competitive hotel rates at choice destinations<span class="dots">...</span><span class="more"> and plan luxury tours within and outside Nigeria. For enquiries, send us an email <a href="mailto:info@neezerlink.com">info@neezerlink</a> </span>
 						<button>Read More</button>
 						</p>
 							
-					</a>
+				</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
+					<div class="box_feat" href="#0">
 						<i class="pe-7s-map-2"></i>
 						<h3>Tour Packages & Corporate Retreats</h3>
 						<p class="showmore">We are specialised in providing bespoke travel itineraries for individuals, couples, family members and corp<span class="dots">...</span><span class="more">orate organisations.  We create and manage holiday packages to suit your interests.
-						For enquiries, send us an email info@neezerchain.com </span>
+						For enquiries, send us an email <a href="mailto:info@neezerlink.com">info@neezerlink</a></span>
 						<button>Read more</button>
 					</p>
-					</a>
+					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
+					<div class="box_feat" href="#0">
 						<i class="pe-7s-plane"></i>
 						<h3>MICE Travel </h3>
 						<p class="showmore">Whether you are a small or large company, the benefits of top-class MICE (Meetings, Incentives, Confer<span class="dots">...</span>
 						<span class="more">encing and Exhibitions)events include showcasing your products, building new client relationships and rewarding your employees for their hard work.
-						We can help you arrange individual and group trips for meetings, conferences, seminars or exhibitions within and outside Nigeria.  Our services also include attending to accommodation requests, ensuring incredible catering and planning top-class entertainment and activities for attendees. 
+						We can help you arrange individual and group trips for meetings, conferences, seminars or exhibitions within and outside Nigeria.  Our services also include attending to accommodation requests, ensuring incredible catering and planning top-class entertainment and activities for attendees. For enquiries, send us an email <a href="mailto:info@neezerlink.com">info@neezerlink</a> 
 						</span>
 						
 						<button>Read more</button>
 					</p>
-					</a>
+					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
+					<div class="box_feat" href="#0">
 						<i class="pe-7s-study"></i>
 						<h3>Admission & Visa Applications</h3>
 						<p>Our team is made up of skilled personnel who are vast in processes for obtaining visas/permits in different countries.  
-						However, we do not guarantee visa issuance as this remains the responsibility of immigration officials.
+						However, we do not guarantee visa issuance as this remains the responsibility of immigration officials.<br>
+						<a href="#visa-popup" id="visa-quote">GET FEE QUOTE FOR VISA ASSISTANCE</a>
 						
-						<button>GET FEE QUOTE FOR VISA ASSISTANCE</button>
-
 						</p>
-					</a>
+					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
+					<div class="box_feat" href="#0">
 						<i class="pe-7s-users"></i>
 						<h3>Travel Consultancy</h3>
 						<p class="showmore">We have experts who are available to answer your questions on issues relating to travelling into and outside <span class="dots">...</span>
-						<span class="more">Nigeria. For enquiries, send us an email info@neezerchain.com
+						<span class="more">Nigeria. For enquiries, send us an email <a href="mailto:info@neezerlink.com">info@neezerlink</a>
 						</span>
 						
 						<button>Read more</button>
 					</p>
-					</a>
+					</div>
 				</div>
 			</div>
 			<!--/row-->
 		</div>
 		<!-- /container -->
 </section>
-
 
 <section class="flight-search-container mt-5" id="flight">
 
@@ -204,8 +199,21 @@
           		<iframe id='travelstartIframe-32647fb7-728a-4052-8339-e691a7a9f48d' frameBorder='0' scrolling='no' style='margin: 0px; padding: 0px; border: 0px; height: 0px; background-color: #fafafa;'></iframe>
         	</div>
 </section>
-
-
+<section id="visa">
+<div class="container container-custom margin_30_95">
+<div class="banner mb-0">
+				<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)">
+					<div>
+						<small>Adventure</small>
+						<h3>Your Perfect<br>Advenure Experience</h3>
+						<p>Activities and accommodations</p>
+						<a href="adventure.html" class="btn_1">Read more</a>
+					</div>
+				</div>
+				<!-- /wrapper -->
+			</div>
+</div>
+</section>
 <section id="tours">
 		<div class="container container-custom margin_80_0">
 			<div class="main_title_2">
@@ -275,7 +283,7 @@
 					<div class="box_grid">
 						<figure>
 							<a href="#0" class="wish_bt"></a>
-							<a href="tour-detail.html"><img src="img/zanzibar_3.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+							<a href="tour-detail.html"><img src="img/zanzibar_4.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
 							<small>Vacation</small>
 						</figure>
 						<div class="wrapper">
@@ -291,7 +299,7 @@
 				</div>
 			</div>
 			<!-- /carousel -->
-			<p class="btn_home_align"><a href="#sign-in-dialog" id="sign-in" class="btn_1 rounded">Make an Enquiry</a></p>
+			<p class="btn_home_align text-center"><a href="#sign-in-dialog" id="sign-in" class="btn_1 rounded">Make an Enquiry</a></p>
 			<hr class="large">
 		</div>
 		<!-- /container -->
@@ -589,7 +597,6 @@
 						<div class="box_1">
 							<h3>Enjoy a GREAT travel with us</h3>
 							<p>No matter where you’re going from, we take you there.</p>
-							<p>Let us transport you with our highly affordable and reliable holiday packages</p>
 							<a href="#flight" class="btn_1 rounded">Book a flight</a>
 						</div>
 					</div>
@@ -708,12 +715,63 @@
 					<input placeholder="Are you human? 3 + 1 =" class="form-control" type="text" id="verify_contact_detail" name="verify_contact_detail">
 				</div>
 				
-				<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width" id="submit-contact-detail"></div>
+				<div class="text-center"><input type="submit" value="Submit" class="btn_1 full-width" id="submit-contact-detail"></div>
 		</form>
 		</div>
 		<!--form -->
 	</div>
 	<!-- /Sign In Popup -->
+
+
+
+
+	<!-- Quote Popup -->
+	<div id="visa-popup" class="zoom-anim-dialog mfp-hide">
+		<div class="small-dialog-header">
+			<h3>QUOTE FOR VISA ASSISTANCE </h3>
+		</div>
+		<div id="message-contact-detail">
+		<form method="post" action="assets/contact_detail.php" >
+			<div class="sign-in-wrapper">
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" class="form-control" name="name" id="name">
+					
+				</div>
+			
+				<div class="form-group">
+					<label>Nationality</label>
+					<input type="tex" class="form-control" name="nationality" id="nationality">
+				</div>
+				<div class="form-group">
+					<label>Departing Country</label>
+					<input type="text" class="form-control" name="takeoff" id="takeoff" >
+				</div>
+				<div class="form-group">
+					<label>Destination</label>
+					<input type="text" class="form-control" name="destination" id="destination">
+				</div>
+				<div class="form-group">
+					<label>Travel Period</label>
+					<input type="text" class="form-control" name="period" id="period">
+					
+				</div>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" name="email" id="email">
+					
+				</div>
+				<div class="form-group">
+					<input placeholder="Are you human? 1 + 1 =" class="form-control" type="text" id="verify_contact_detail" name="verify_contact_detail">
+				</div>
+				
+				<div class="text-center"><input type="submit" value="Submit" class="btn_1 full-width" id="submit-contact-detail"></div>
+		</form>
+		</div>
+		<!--form -->
+	</div>
+	<!-- /Quote Popup -->
+
 	
 	<div id="toTop"></div><!-- Back to top button -->
 	
@@ -754,6 +812,20 @@
   });
 });
 
+// Modal Sign In
+$('#visa-quote').magnificPopup({
+		type: 'inline',
+		fixedContentPos: true,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>',
+		mainClass: 'my-mfp-zoom-in'
+	});
+
 	</script>
 	
 	<!-- INPUT QUANTITY  -->
@@ -761,131 +833,10 @@
 
 	<!-- travel start -->
 	<script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/vendor/jquery.browser-0.0.8.min.js'>
-</script><script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/jquery.ba-postmessage.min.js'></script>
+	</script><script type='text/javascript' src='https://www.travelstart.com.ng/resources/js/jquery.ba-postmessage.min.js'></script>
+	<script type='text/javascript' src='http://localhost/neezerlink/js/travelstart_affiliate_code.js'></script>
 
-<script>
-
-	// these variables can be configured 
-	var travelstartIframeId = 'travelstartIframe-32647fb7-728a-4052-8339-e691a7a9f48d'; 
-	var iframeUrl = 'https://www.travelstart.com.ng'; 
-	var logMessages = false; 
-	var showBanners = false; 
-	var affId = '215170'; 
-	var affCampaign = ''; 
-	var affCurrency = 'Default'; // ZAR / USD / NAD / ... 
-	var height = '0px'; 
-	var width = '100%'; 
-	var language = ''; // ar / en / leave empty for user preference
  
-	// do not change these 
-	var iframe = jQuery('#' + travelstartIframeId); 
-	var iframeVersion = '11'; 
-	var autoSearch = false; 
-	var urlParams = {}; 
-	var alreadyExist = []; 
-	var affiliateIdExist = false;  
-	var iframeParams = []; 
-	var cpySource = ''; 
-	var match,
-		pl = /\+/g,  
-		search = /([^&=]+)=?([^&]*)/g,
-		decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-		query  = window.location.search.substring(1);
-	while (match = search.exec(query)){ 
-		urlParams[decode(match[1])] = decode(match[2]); 
-	}				 
-	for (var key in urlParams){ 
-		if (urlParams.hasOwnProperty(key)){ 
-			if (key == 'search' && urlParams[key] == 'true'){ 
-				autoSearch = true; 
-			} 
-			if(	key == 'affId' || key == 'affid' || key == 'aff_id'){ 
-				affiliateIdExist = true ; 
-			} 
-			iframeParams.push(key + '=' + urlParams[key]); 
-			alreadyExist.push(key); 
-		}	 
-	}		 
-	if(!('show_banners' in alreadyExist)){ 
-		iframeParams.push('show_banners=' + showBanners); 
-	}		 
-	if(!('log' in alreadyExist)){ 
-		iframeParams.push('log='  + logMessages); 
-	}		 
-	if(! affiliateIdExist){  
-		iframeParams.push('affId='  + affId); 
-	}		 
-	if(! affiliateIdExist){ 
-		iframeParams.push('language='  + language); 
-	}		 
-	if(!('affCampaign' in alreadyExist)){ 
-		iframeParams.push('affCampaign='  + affCampaign); 
-	}		 
-	if(cpySource !== '' && !('cpySource' in alreadyExist)){ 
-		iframeParams.push('cpy_source='  + cpySource); 
-	}		 
-	if(!('utm_source' in alreadyExist)){ 
-		iframeParams.push('utm_source=affiliate'); 
-	}		 
-	if(!('utm_medium' in alreadyExist)){ 
-		iframeParams.push('utm_medium='  + affId); 
-	}		 
-	if(!('isiframe' in alreadyExist)){ 
-		iframeParams.push('isiframe=true'); 
-	}		 
-	if(!('landing_page' in alreadyExist)){ 
-		iframeParams.push('landing_page=false'); 
-	}		 
-	if (affCurrency.length == 3){ 
-		iframeParams.push('currency=' + affCurrency); 
-	} 
-	if(!('iframeVersion' in alreadyExist)){ 
-  		iframeParams.push('iframeVersion='  + iframeVersion);
-	}		 
-	if(!('host' in alreadyExist)){ 
-		iframeParams.push('host=' + window.location.href.split('?')[0]); 
-	}		 
-	var newIframeUrl = iframeUrl + (autoSearch ? '/search-on-index?search=true' : '/search-on-index?search=false') + '&' + iframeParams.join('&'); 
-	iframe.attr('src', newIframeUrl); 
-	function setIframeSize(newWidth, newHeight){ 
-		iframe.css('width', newWidth); 
-		iframe.width(newWidth); 
-		iframe.css('height', newHeight); 
-		iframe.height(newHeight); 
-	} 
-	setIframeSize(width, height); 
-	jQuery.receiveMessage(function(e, host){ 
-   try { 
-         if (typeof e.data !== 'undefined') { 
-            var dataElements = e.data.split('&'); 
-            if (dataElements) { 
-                if (dataElements.length === 1) { 
-                    //Resize 
-                     setIframeSize(width, e.data + 'px'); 
-                 } else { 
-                     // Set iframe Size 
-                     var height = dataElements[1].split('='); 
-                     setIframeSize(width, height[1]+'px'); 
-                     // Scroll to position 
-                     if (dataElements.length > 2) { 
-                         var scrollTo = dataElements[2].split('='); 
-                         if (scrollTo[1] !== 'none') { 
-                             var iframeTop = iframe.position().top; 
-                             if (scrollTo[1] == 'to-top') { 
-                                 window.scrollTo(0, iframeTop); 
-                             } else { 
-                                 window.scrollTo(0, iframeTop+parseInt(scrollTo[1])); 
-                             } 
-                         } 
-                     } 
-                 } 
-             } 
-         } 
-     } catch (err) { 
-         window.console && console.log(err); 
-     } 
- }, iframeUrl); 
-</script>   
 	
 </body>
 </html>

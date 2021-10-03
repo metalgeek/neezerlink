@@ -124,6 +124,7 @@
 		mainClass: 'my-mfp-zoom-in'
 	});
 
+
 	// Modal generic
 	$('#modal').magnificPopup({
 		type: 'inline',
